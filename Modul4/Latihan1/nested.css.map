@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["nested.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA;EACA;EACA;;AAIF;EACE;EACA","file":"nested.css"}
+{"version":3,"sourceRoot":"","sources":["nested.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EAEE;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EAEE;EACA;EACA;EACA;;AAIF;EACE;EACA;EACA;EACA;EACA;;AAIF;EACE;EACA","file":"nested.css"}

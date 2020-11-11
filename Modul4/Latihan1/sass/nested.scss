@@ -1,14 +1,25 @@
-.sidebbar {
+.sidebar {
   float: left;
   height: auto;
   width: 300px;
   background-color: #f1f1f1;
+  padding: {
+    top: 10px;
+    bottom: 300px;
+  }
+
   ul {
     list-style-type: none;
     padding: 0;
     width: 200px;
     text-align: center;
     background-color: #f1f1f1;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+    }
   }
   li {
     a {
