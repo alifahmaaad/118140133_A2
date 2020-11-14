@@ -1,0 +1,77 @@
+nav {
+  font-size: 12px;
+}
+
+li img {
+  max-width: 40px;
+  margin-right: 25%;
+  padding-top: -5px;
+}
+
+.logo,
+hr {
+  margin-top: -15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+  padding-right: 8%;
+  overflow: hidden;
+  font-size: 15px;
+}
+nav li {
+  float: left;
+  margin-right: 20px;
+}
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: gray;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.card {
+  -webkit-box-shadow: 2 2 10 0 rgba(51, 50, 51, 0.3);
+  -moz-box-shadow: 2 2 10 0 rgba(51, 50, 51, 0.3);
+  box-shadow: 2 2 10 0 rgba(51, 50, 51, 0.3);
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 50px;
+  border-radius: 2px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2 2 10 0 rgba(51, 50, 51, 0.3);
+  -moz-box-shadow: 2 2 10 0 rgba(51, 50, 51, 0.3);
+  box-shadow: 2 2 10 0 rgba(51, 50, 51, 0.3);
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.gallery .desc {
+  padding: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
