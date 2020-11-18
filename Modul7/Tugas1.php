@@ -29,12 +29,12 @@ include 'koneksi.php';
     <!-- TAB FORM MAHASISWA -->
     <form method="POST" enctype=multipart/form-data class="tab-content" id="form">
         <h2>FORM</h2>
-        <label> Nama : </label>
-        <input type="text" name="nm"><br />
-        <label> NRP : </label>
-        <input type="text" name="nrp"><br />
+        <label> Nama &nbsp;&nbsp;: </label>
+        <input type="text" name="nm"><br /><br />
+        <label> NRP &nbsp;&nbsp;&nbsp;&nbsp;: </label>
+        <input type="text" name="nrp"><br /><br />
         <label> Alamat : </label>
-        <textarea name="alamat"></textarea><br />
+        <textarea name="alamat"></textarea><br /><br />
         <label> jurusan : </label>
         <select name="jurusan" id="jurusan">
             <?php
@@ -45,7 +45,7 @@ include 'koneksi.php';
             <?php
             }
             ?>
-        </select><br />
+        </select><br /><br />
         <!--  Foto : <input type="file" name="foto"><br /> -->
         <button type="submit" name="kirim">Tambah</button>
     </form>
@@ -55,7 +55,7 @@ include 'koneksi.php';
         <h2>CARI MAHASISWA</h2>
         Masukkan Nama Mahasiswa yang anda cari :
         <input type="text" name="data">
-        <button type="submit" name="src">Cari</button><br />
+        <button type="submit" name="src">Cari</button><br /><br />
         <button type="submit" name="reset">Hapus Hasil Pencarian</button><br /><br />
         <?php
         //note php diletakkan disini karna pada form ini saya ingin menjadikannya berada di class tab-content cari
@@ -65,8 +65,8 @@ include 'koneksi.php';
             $data = $_POST['data'];
             $hasil = mysqli_query($sambung, "select * from mahasiswa join jurusan on mahasiswa.id_jur=jurusan.id_jur where mahasiswa.nama like '%$data%'");
             while ($baris = mysqli_fetch_array($hasil)) {
-                echo "Nama    : $baris[1] <br/>";
-                echo "NRP    : $baris[0] <br/>";
+                echo "Nama  &nbsp;  : $baris[1] <br/>";
+                echo "NRP   &nbsp;   &nbsp;&nbsp;: $baris[0] <br/>";
                 echo "Alamat    : $baris[2] <br/>";
                 echo "jurusan    : $baris[5] <br/><br/>";
             }
@@ -82,7 +82,7 @@ include 'koneksi.php';
         <h2>DELETE MAHASISWA</h2>
         Masukkan NRP Mahasiswa :
         <input type="text" name="delnrp">
-        <button type="submit" name="del">Cari</button><br />
+        <button type="submit" name="del">Cari</button><br /><br />
 
         <?php
         //note php diletakkan disini karna pada form ini saya ingin menjadikannya berada di class tab-content del
@@ -93,8 +93,8 @@ include 'koneksi.php';
             $hasil = mysqli_query($sambung, "select * from mahasiswa where NRP like '%$delnrp%'");
             echo $delnrp;
             while ($baris = mysqli_fetch_array($hasil)) {
-                echo "Nama    : $baris[1] <br/>";
-                echo "NRP    : $baris[0] <br/>";
+                echo "Nama   &nbsp;&nbsp;: $baris[1] <br/>";
+                echo "NRP   &nbsp; &nbsp;&nbsp;: $baris[0] <br/>";
                 echo "Alamat    : $baris[2] <br/>";
                 echo "<button type='submit' name='fixdel'><a href='delete.php?delnrp=" . $baris[0] . "'>Delete</a></button><br/><br/>";
             }

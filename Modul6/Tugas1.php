@@ -1,3 +1,4 @@
+<html>
 <?php
 
 function faktorial($bil)
@@ -9,4 +10,17 @@ function faktorial($bil)
   }
   echo "hasilnya = $hasil";
 }
-faktorial(5);
+?>
+
+<head>
+  <title>Faktorial</title>
+</head>
+<form method="POST">
+  bilangan : <input type="text" name="bil">
+  <button type="submit" name="sub"> Faktorial</button></form>
+
+</html>
+<?php if (isset($_POST['sub'])) {
+  $bill = $_POST['bil'];
+  faktorial($bill);
+}

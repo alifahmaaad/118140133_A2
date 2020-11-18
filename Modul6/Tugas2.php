@@ -1,3 +1,4 @@
+<html>
 <?php
 function hargabet($nama, $warna = "red")
 {
@@ -19,6 +20,25 @@ function hargabet($nama, $warna = "red")
 Warna Harus dalam bahasa Inggris
 Spasi Termasuk dalam karakter
 */
-hargabet("Ahmad Alif Sofian", "blue");
-hargabet("saskeh", "black");
-hargabet("Nama Saya Lebih Dari 20 Karakter Nih", "cyan");
+?>
+
+<head>
+    <title>hargabet</title>
+</head>
+<form method="post">
+    Nama &nbsp;: <input type="text" name="nama"><br><br>
+    Warna : <input type="text" name="Warna">
+    <button type="submit" name="sub"> Submit</button>
+</form>
+
+</html>
+<?php
+if (isset($_POST['sub'])) {
+    $nama = $_POST['nama'];
+    $warna = $_POST['Warna'];
+    if (strlen($warna) > 0) {
+        hargabet($nama, $warna);
+    } else {
+        hargabet($nama);
+    }
+}
