@@ -90,7 +90,7 @@ include 'koneksi.php';
         // SUBMIT CARI MAHASISWA
         if (isset($_POST['del'])) {
             $delnrp = $_POST['delnrp'];
-            $hasil = mysqli_query($sambung, "select * from mahasiswa where NRP = '$delnrp'");
+            $hasil = mysqli_query($sambung, "select * from mahasiswa where NRP like '%$delnrp%'");
             echo $delnrp;
             while ($baris = mysqli_fetch_array($hasil)) {
                 echo "Nama    : $baris[1] <br/>";
