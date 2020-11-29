@@ -1,0 +1,46 @@
+body {
+	background-image: url("https://i.ytimg.com/vi/vV6JpyUlLXc/maxresdefault.jpg");
+}
+.title {
+	font-family: "Trebuchet MS";
+}
+.loginbox {
+	max-width: 350px;
+	background: white;
+	margin: 11% auto;
+	padding: 30px 20px;
+}
+
+label {
+	font-size: 11pt;
+}
+
+.form_login {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+.error {
+	color: red;
+}
+.lgn {
+	background: limegreen;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+.lgn:hover {
+	background: #54b157;
+	cursor: pointer;
+}
+
+.link {
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+}

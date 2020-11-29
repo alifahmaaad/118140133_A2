@@ -1,0 +1,30 @@
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+h2 {
+	margin-left: 30%;
+}
+
+label {
+	margin-left: 30%;
+}
+
+input[type="text"],
+input[type="pass"],
+input[type="number"],
+button {
+	box-sizing: border-box;
+	width: 40%;
+	border: 1px solid #cccccc;
+	padding: 10px;
+	border-radius: 3px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
