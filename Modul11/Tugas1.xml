@@ -1,0 +1,28 @@
+ <?xml version="1.0"?>
+<biodata>
+  <nama>
+        <awal>Ahmad</awal>
+        <tengah>Alif</tengah>
+        <akhir>Sofian</akhir>
+  </nama>
+  <JenisKelamin>Laki Laki</JenisKelamin>
+  <OrangTua>
+        <ayah>Sofian</ayah>
+        <ibu>Yetty</ibu>
+  </OrangTua>
+  <hobi>
+        <hobi1>Bermain Musik</hobi1>
+        <hobi2>Bermain Game</hobi2>
+        <hobi3>Bermain Badminton</hobi3>
+  </hobi>
+  <alamat>
+        <kecamatan>Tanjung Karang Pusat</kecamatan>
+        <kota>Bandar Lampung</kota>
+        <provinsi>Lampung</provinsi>
+  </alamat>
+  <SosialMedia>
+        <github>alifahmaaad</github>
+        <instagram>@alifahmaaad</instagram>
+        <valorant>ax36#0306</valorant>
+  </SosialMedia>
+</biodata> 

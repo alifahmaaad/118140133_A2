@@ -1,0 +1,29 @@
+{
+    "nama": {
+       "awal": "Ahmad",
+       "tengah": "Alif",
+       "akhir": "Sofian"
+    },
+    "JenisKelamin": "Laki Laki",
+    "OrangTua": {
+       "ayah": "Sofian",
+       "ibu": "Yetty"
+    },
+    "hobi": {
+       "hobi1": "Bermain Musik",
+       "hobi2": "Bermain Game",
+       "hobi3": "Bermain Badminton"
+    },
+    "alamat": {
+       "kecamatan": "Tanjung Karang Pusat",
+       "kota": "Bandar Lampung",
+       "provinsi": "Lampung"
+    },
+    "SosialMedia": {
+       "github": "alifahmaaad",
+       "instagram": "@alifahmaaad",
+       "valorant": "ax36#0306"
+    }
+ }
+ 
+ 
