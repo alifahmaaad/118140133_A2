@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Tugas2</title>
+    <style>
+        .texxt{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        div,section {
+            padding: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="texxt">
+        <div id="id1">Div Ini dengan ID- id1</div> 
+        <section class="class1">Section ini dengan class- class1 </section>
+        <div class="class1">Div ini dengan class- class1</div>
+    </div><br>
+        <!-- getElementById ID -->
+        <button onclick="return ubah(document.getElementById('id1'), 'RED')">Ubah Background dengan getElementById</button><br>
+        <br><!-- getElementsByClassName nama class-nya -->
+        <button onclick="return ubah(document.getElementsByClassName('class1'), 'Gray')">Ubah Background dengan getElementsByClassName</button><br>
+        <br><!-- getElementsByTagName dengan tagName -->
+        <button onclick="return ubah(document.getElementsByTagName('section'), 'Blue')">Ubah Background dengan getElementsByTagName</button><br>
+        <br><!-- querySelector memilih node target yang pertama  -->
+        <button onclick="return ubah(document.querySelector('div'), 'Yellow')">Ubah Background dengan querySelector</button><br> 
+        <br><!-- querySelectorAll Memilih semua node target -->
+        <button onclick="return ubah(document.querySelectorAll('div'), 'green')">Ubah Background dengan querySelectorAll</button><br>
+    </main>
+
+    <script>
+        function ubah(element, warna) {
+            elementLength = element.length;
+            if (elementLength>0) {
+                for (var i = 0; i < elementLength; i++) {
+                    element[i].style.backgroundColor = warna;
+                }
+                return;
+            }
+
+            element.style.backgroundColor = warna;
+        }
+
+    </script>
+</body>
+</html>
