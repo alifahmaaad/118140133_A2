@@ -46,5 +46,6 @@
     </table><br>
     <button><a style="text-decoration: none;" href="<?php echo base_url('artikel/tambah/'); ?>">Tambah</a></button>
 </center>
+asdasda
 
 </html>
